@@ -1,4 +1,5 @@
 import { PricingSection } from "./components/PricingSection";
+import { ScheduleMeetingWidget } from "./components/ScheduleMeetingWidget";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <main className="flex w-full flex-col items-center">
         <PricingSection />
       </main>
+      <ScheduleMeetingWidget />
     </div>
   );
 }

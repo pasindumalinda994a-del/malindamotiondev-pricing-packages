@@ -1,0 +1,160 @@
+
+<h2 class="sr-only">Malinda MotionDev pricing plans for premium web development services</h2>
+
+<style>
+.plan-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-bottom: 2rem; }
+.plan-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.5rem 1.25rem; display: flex; flex-direction: column; }
+.plan-card.featured { border: 2px solid #378ADD; }
+.badge { display: inline-block; background: var(--color-background-info); color: var(--color-text-info); font-size: 11px; padding: 3px 10px; border-radius: var(--border-radius-md); margin-bottom: 10px; font-weight: 500; letter-spacing: 0.03em; }
+.plan-icon { font-size: 22px; color: var(--color-text-secondary); margin-bottom: 10px; }
+.plan-name { font-size: 16px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 4px; }
+.plan-sub { font-size: 12px; color: var(--color-text-secondary); margin: 0 0 16px; }
+.plan-price { font-size: 26px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px; }
+.plan-currency { font-size: 13px; color: var(--color-text-secondary); margin: 0 0 16px; }
+.divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 14px 0; }
+.feat-list { list-style: none; margin: 0; padding: 0; flex: 1; }
+.feat-list li { font-size: 13px; color: var(--color-text-secondary); padding: 5px 0; display: flex; align-items: flex-start; gap: 8px; line-height: 1.5; }
+.feat-list li i { color: var(--color-text-success); font-size: 15px; margin-top: 1px; flex-shrink: 0; }
+.feat-list li.dim i { color: var(--color-text-tertiary); }
+.feat-list li.dim { color: var(--color-text-tertiary); text-decoration: line-through; }
+.cta-btn { display: block; text-align: center; margin-top: 20px; padding: 9px 0; font-size: 13px; font-weight: 500; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-secondary); background: transparent; color: var(--color-text-primary); cursor: pointer; transition: background 0.15s; }
+.cta-btn:hover { background: var(--color-background-secondary); }
+.cta-btn.primary { background: #185FA5; color: #E6F1FB; border: none; }
+.cta-btn.primary:hover { background: #378ADD; }
+.section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-text-tertiary); margin: 0 0 10px; }
+.ongoing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 1.5rem; }
+.oc-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem; }
+.oc-label { font-size: 11px; color: var(--color-text-tertiary); margin: 0 0 4px; }
+.oc-price { font-size: 18px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px; }
+.oc-desc { font-size: 12px; color: var(--color-text-secondary); margin: 0; line-height: 1.5; }
+.note { font-size: 12px; color: var(--color-text-tertiary); text-align: center; margin-top: 8px; }
+.addon-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+.addon-row:last-child { border-bottom: none; }
+.addon-name { font-size: 13px; color: var(--color-text-secondary); }
+.addon-price { font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+.section-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem; margin-bottom: 1.5rem; }
+</style>
+
+<div style="padding: 1.5rem 0 0;">
+
+<p class="section-label">Pricing plans</p>
+
+<div class="plan-grid">
+
+  <div class="plan-card">
+    <i class="ti ti-layout plan-icon" aria-hidden="true"></i>
+    <p class="plan-name">Starter</p>
+    <p class="plan-sub">Clean, fast business presence</p>
+    <p class="plan-price">Rs. 65,000</p>
+    <p class="plan-currency">one-time</p>
+    <hr class="divider">
+    <ul class="feat-list">
+      <li><i class="ti ti-check" aria-hidden="true"></i>Up to 5 pages</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Next.js + Tailwind CSS</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Fully responsive</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>GSAP micro-animations</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Next.js speed optimization</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Basic on-page SEO setup</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Contact form</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>2 revision rounds</li>
+      <li class="dim"><i class="ti ti-minus" aria-hidden="true"></i>3D / WebGL</li>
+      <li class="dim"><i class="ti ti-minus" aria-hidden="true"></i>CMS / blog</li>
+    </ul>
+    <button class="cta-btn" onclick="sendPrompt('Tell me more about the Starter plan for malinda.motiondev')">Get a quote ↗</button>
+  </div>
+
+  <div class="plan-card featured">
+    <span class="badge">Most popular</span>
+    <i class="ti ti-wand plan-icon" aria-hidden="true"></i>
+    <p class="plan-name">Signature</p>
+    <p class="plan-sub">Premium interactive experience</p>
+    <p class="plan-price">Rs. 175,000</p>
+    <p class="plan-currency">one-time</p>
+    <hr class="divider">
+    <ul class="feat-list">
+      <li><i class="ti ti-check" aria-hidden="true"></i>Up to 10 pages</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Next.js + Tailwind + GSAP</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Advanced scroll animations</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Custom transitions &amp; UI effects</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Next.js speed + SEO optimization</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Keyword research + SEO content brief</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>MongoDB integration if needed</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>CMS / blog setup</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>4 revision rounds</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Awwwards-level design quality</li>
+      <li class="dim"><i class="ti ti-minus" aria-hidden="true"></i>3D / WebGL (add-on available)</li>
+    </ul>
+    <button class="cta-btn primary" onclick="sendPrompt('Tell me more about the Signature plan for malinda.motiondev')">Get a quote ↗</button>
+  </div>
+
+  <div class="plan-card">
+    <i class="ti ti-cube plan-icon" aria-hidden="true"></i>
+    <p class="plan-name">Immersive</p>
+    <p class="plan-sub">Full 3D / WebGL experience</p>
+    <p class="plan-price">Rs. 300,000+</p>
+    <p class="plan-currency">one-time, custom scope</p>
+    <hr class="divider">
+    <ul class="feat-list">
+      <li><i class="ti ti-check" aria-hidden="true"></i>Everything in Signature</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Three.js / WebGL scenes</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Custom 3D interactions</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Shader effects if needed</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Advanced performance tuning</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Full SEO setup + keyword research + SEO content brief</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Unlimited revisions</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Discovery call + strategy session</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i>Priority delivery</li>
+    </ul>
+    <button class="cta-btn" onclick="sendPrompt('Tell me more about the Immersive plan for malinda.motiondev')">Let's talk ↗</button>
+  </div>
+
+</div>
+
+<p class="note">All plans include mobile responsiveness, SSL-ready deployment, and a handover call. 50% upfront, 50% on launch.</p>
+
+<hr class="divider" style="margin: 2rem 0 1.5rem;">
+
+<p class="section-label">Add-ons (optional upgrades)</p>
+
+<div class="section-card">
+  <div class="addon-row"><span class="addon-name">Three.js / WebGL scene (to any plan)</span><span class="addon-price">+ Rs. 45,000</span></div>
+  <div class="addon-row"><span class="addon-name">Keyword research + SEO content brief</span><span class="addon-price">+ Rs. 25,000</span></div>
+  <div class="addon-row"><span class="addon-name">Extra pages (per page)</span><span class="addon-price">+ Rs. 12,000</span></div>
+  <div class="addon-row"><span class="addon-name">Extra revision round</span><span class="addon-price">+ Rs. 8,000</span></div>
+</div>
+
+<hr class="divider" style="margin: 1rem 0 1.5rem;">
+
+<p class="section-label">Ongoing costs after launch</p>
+
+<div class="ongoing-grid">
+  <div class="oc-card">
+    <p class="oc-label">Hosting &amp; maintenance</p>
+    <p class="oc-price">Rs. 147,000–152,000/yr</p>
+    <p class="oc-desc">Rough total per year: maintenance at Rs. 12,000/month (Rs. 144,000/year) for security updates, dependency upgrades, and small content changes, plus hosting usually Rs. 3,000–8,000/year. Vercel’s free tier can keep hosting lower until you need Pro for traffic.</p>
+  </div>
+  <div class="oc-card">
+    <p class="oc-label">Domain renewal</p>
+    <p class="oc-price">Rs. 3,000–5,000</p>
+    <p class="oc-desc">per year for .com or .lk domain.</p>
+  </div>
+  <div class="oc-card">
+    <p class="oc-label">Blog &amp; SEO (monthly)</p>
+    <p class="oc-price">Rs. 25,000</p>
+    <p class="oc-desc">Optional retainer if you want search traffic to keep growing: new or updated blog posts, which keywords you rank for, and small on-page fixes (titles, headings, copy) so Google clearly understands each page.</p>
+  </div>
+  <div class="oc-card">
+    <p class="oc-label">Minor feature updates</p>
+    <p class="oc-price">Rs. 8,000–20,000</p>
+    <p class="oc-desc">per task. New section, new page, animation tweak, etc.</p>
+  </div>
+  <div class="oc-card">
+    <p class="oc-label">Full redesign</p>
+    <p class="oc-price">every 3–4 years</p>
+    <p class="oc-desc">A well-built Next.js site rarely needs a full rebuild before then.</p>
+  </div>
+</div>
+
+<p class="note" style="margin-bottom: 1.5rem;">Maintenance and SEO are completely optional. You can manage content yourself if you prefer.</p>
+
+</div>
