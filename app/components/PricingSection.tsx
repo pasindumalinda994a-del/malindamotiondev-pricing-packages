@@ -1,7 +1,4 @@
-import { waHref } from "../lib/contact";
-
-/** Update if your Instagram username differs. */
-const INSTAGRAM_PROFILE = "https://www.instagram.com/malindamotiondev/";
+import { INSTAGRAM_PROFILE, waHref } from "../lib/contact";
 
 function CheckIcon({ className }: { className?: string }) {
   return (
@@ -108,7 +105,7 @@ const plans: {
       { text: "Next.js speed + SEO optimization", included: true },
       { text: "Keyword research + SEO content brief", included: true },
       { text: "MongoDB integration if needed", included: true },
-      { text: "CMS / blog setup", included: true },
+      { text: "CMS", included: true },
       { text: "4 revision rounds", included: true },
       { text: "Awwwards-level design quality", included: true },
       { text: "3D / WebGL (add-on available)", included: false },
@@ -128,7 +125,6 @@ const plans: {
       { text: "Custom 3D interactions", included: true },
       { text: "Shader effects if needed", included: true },
       { text: "Advanced performance tuning", included: true },
-      { text: "Full SEO setup + keyword research + SEO content brief", included: true },
       { text: "Unlimited revisions", included: true },
       { text: "Discovery call + strategy session", included: true },
       { text: "Priority delivery", included: true },
