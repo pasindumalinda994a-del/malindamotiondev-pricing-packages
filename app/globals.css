@@ -25,15 +25,40 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* react-day-picker — match pricing sky accent */
+/* react-day-picker — schedule widget */
 .schedule-meeting-picker .rdp-root {
   --rdp-accent-color: #185fa5;
   --rdp-accent-background-color: #e0f2fe;
+  --rdp-today-color: #185fa5;
+  --rdp-day-height: 3rem;
+  --rdp-day-width: 3rem;
+  --rdp-day_button-height: 3rem;
+  --rdp-day_button-width: 3rem;
+  --rdp-day_button-border-radius: 0.5rem;
+  --rdp-day_button-border: 1px solid transparent;
+  --rdp-nav_button-height: 2.75rem;
+  --rdp-nav_button-width: 2.75rem;
+  --rdp-nav-height: 3rem;
+  --rdp-outside-opacity: 0.45;
+  --rdp-disabled-opacity: 0.35;
+  --rdp-weekday-opacity: 1;
+  --rdp-selected-border: 1px solid #185fa5;
+  --rdp-chevron-disabled-opacity: 0.35;
 }
 
 @media (prefers-color-scheme: dark) {
   .schedule-meeting-picker .rdp-root {
     --rdp-accent-color: #38bdf8;
     --rdp-accent-background-color: rgb(12 74 110 / 0.45);
+    --rdp-today-color: #7dd3fc;
+    --rdp-selected-border: 1px solid rgb(56 189 248 / 0.85);
   }
+}
+
+.schedule-time-chips {
+  scrollbar-gutter: stable;
+}
+
+.schedule-time-chips:focus-within {
+  outline: none;
 }
