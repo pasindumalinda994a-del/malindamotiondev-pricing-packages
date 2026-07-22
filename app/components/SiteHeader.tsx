@@ -7,7 +7,7 @@ const nav = [
 
 export function SiteHeader({ active }: { active?: "pricing" | "projects" }) {
   return (
-    <header className="w-full border-b border-zinc-200 py-4 dark:border-zinc-800">
+    <header className="relative z-[60] w-full border-b border-zinc-200 bg-zinc-50/95 py-4 backdrop-blur-sm dark:border-zinc-800 dark:bg-black/95">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 md:px-10 lg:px-16">
         <Link
           href="/"

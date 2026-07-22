@@ -72,7 +72,7 @@ const plans: {
   {
     name: "Starter",
     tagline: "Clean, fast business presence",
-    price: "Rs. 85,000",
+    price: "Rs. 65,000",
     priceNote: "one-time",
     features: [
       { text: "Up to 5 pages", included: true },
@@ -93,7 +93,7 @@ const plans: {
   {
     name: "Signature",
     tagline: "Premium interactive experience",
-    price: "Rs. 225,000",
+    price: "Rs. 175,000",
     priceNote: "one-time",
     featured: true,
     badge: "Most popular",
@@ -117,7 +117,7 @@ const plans: {
   {
     name: "Immersive",
     tagline: "Full 3D / WebGL experience",
-    price: "Rs. 375,000+",
+    price: "Rs. 295,000+",
     priceNote: "one-time, custom scope",
     features: [
       { text: "Everything in Signature", included: true },
@@ -136,16 +136,16 @@ const plans: {
 ];
 
 const addons: { name: string; price: string }[] = [
-  { name: "Three.js / WebGL scene (to any plan)", price: "+ Rs. 55,000" },
-  { name: "Keyword research + SEO content brief", price: "+ Rs. 25,000" },
-  { name: "Extra pages (per page)", price: "+ Rs. 12,000" },
-  { name: "Extra revision round", price: "+ Rs. 8,000" },
+  { name: "Three.js / WebGL scene (to any plan)", price: "+ Rs. 45,000" },
+  { name: "Keyword research + SEO content brief", price: "+ Rs. 18,000" },
+  { name: "Extra pages (per page)", price: "+ Rs. 9,000" },
+  { name: "Extra revision round", price: "+ Rs. 6,000" },
 ];
 
 const ongoing: { label: string; price: string; desc: string }[] = [
   {
     label: "Hosting & maintenance",
-    price: "Rs. 50,000/yr",
+    price: "Rs. 45,000/yr",
     desc: "Annual package covering security updates, dependency upgrades, small content changes, and hosting.",
   },
   {
@@ -155,12 +155,12 @@ const ongoing: { label: string; price: string; desc: string }[] = [
   },
   {
     label: "Blog & SEO (monthly)",
-    price: "Rs. 25,000",
+    price: "Rs. 18,000",
     desc: "Optional retainer if you want search traffic to keep growing: new or updated blog posts, which keywords you rank for, and small on-page fixes (titles, headings, copy) so Google clearly understands each page.",
   },
   {
     label: "Minor feature updates",
-    price: "Rs. 8,000–20,000",
+    price: "Rs. 6,000–15,000",
     desc: "per task. New section, new page, animation tweak, etc.",
   },
 ];

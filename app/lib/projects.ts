@@ -1,6 +1,7 @@
 export type Project = {
   slug: string;
   title: string;
+  code: string;
   tagline: string;
   category: string;
   year: string;
@@ -10,13 +11,19 @@ export type Project = {
   deliverables: string[];
   stack: string[];
   href?: string;
-  accent: "sky" | "emerald" | "violet";
+  brandColor: string;
+  brandForeground: string;
+  visualFrom: string;
+  visualTo: string;
+  showcaseFrom: string;
+  showcaseTo: string;
 };
 
 export const projects: Project[] = [
   {
     slug: "ceylon-trails",
     title: "Ceylon Trails",
+    code: "CT",
     tagline: "Tour operator site with booking-led UX",
     category: "Travel & hospitality",
     year: "2025",
@@ -35,11 +42,17 @@ export const projects: Project[] = [
       "CMS-ready content structure",
     ],
     stack: ["Next.js", "Tailwind CSS", "GSAP", "Vercel"],
-    accent: "sky",
+    brandColor: "#185FA5",
+    brandForeground: "#E6F1FB",
+    visualFrom: "#0c4a6e",
+    visualTo: "#38bdf8",
+    showcaseFrom: "#14532d",
+    showcaseTo: "#4ade80",
   },
   {
     slug: "studio-noir",
     title: "Studio Noir",
+    code: "SN",
     tagline: "Architecture practice with cinematic pacing",
     category: "Creative studio",
     year: "2025",
@@ -58,11 +71,17 @@ export const projects: Project[] = [
       "2 revision rounds included in scope",
     ],
     stack: ["Next.js", "Tailwind CSS", "GSAP"],
-    accent: "emerald",
+    brandColor: "#18181b",
+    brandForeground: "#fafafa",
+    visualFrom: "#3f3f46",
+    visualTo: "#a1a1aa",
+    showcaseFrom: "#292524",
+    showcaseTo: "#d6d3d1",
   },
   {
     slug: "orbit-launch",
     title: "Orbit Launch",
+    code: "OL",
     tagline: "Product landing with WebGL hero",
     category: "SaaS / product",
     year: "2024",
@@ -81,7 +100,12 @@ export const projects: Project[] = [
       "Handover and documentation session",
     ],
     stack: ["Next.js", "Three.js", "GSAP", "Tailwind CSS"],
-    accent: "violet",
+    brandColor: "#5b21b6",
+    brandForeground: "#f5f3ff",
+    visualFrom: "#4c1d95",
+    visualTo: "#a78bfa",
+    showcaseFrom: "#1e1b4b",
+    showcaseTo: "#818cf8",
   },
 ];
 

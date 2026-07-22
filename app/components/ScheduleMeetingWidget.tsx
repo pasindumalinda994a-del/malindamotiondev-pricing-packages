@@ -387,14 +387,15 @@ ${noteBlock}`;
   );
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex w-[min(38rem,calc(100vw-1.25rem))] flex-col items-end gap-3 pb-[env(safe-area-inset-bottom)] pr-[max(1rem,env(safe-area-inset-right))] pl-[max(0.75rem,env(safe-area-inset-left))]">
+    <div className="pointer-events-none fixed bottom-6 right-6 z-50 w-auto pb-[env(safe-area-inset-bottom)] pr-[max(1rem,env(safe-area-inset-right))] pl-[max(0.75rem,env(safe-area-inset-left))]">
       <div
         ref={panelRef}
         id={dialogId}
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="schedule-meeting-panel max-h-[min(calc(100dvh-6rem),calc(100svh-6rem))] w-full max-w-[min(36rem,calc(100vw-1.5rem))] origin-bottom-right overflow-y-auto overflow-x-hidden overscroll-y-contain rounded-2xl border border-zinc-200 bg-white/95 p-4 text-zinc-900 shadow-xl backdrop-blur-sm [-webkit-overflow-scrolling:touch] dark:border-zinc-700 dark:bg-zinc-900/95 dark:text-zinc-50"
+        aria-hidden={!open}
+        className="schedule-meeting-panel pointer-events-auto absolute bottom-full right-0 mb-3 max-h-[min(calc(100dvh-6rem),calc(100svh-6rem))] w-[min(36rem,calc(100vw-1.5rem))] origin-bottom-right overflow-y-auto overflow-x-hidden overscroll-y-contain rounded-2xl border border-zinc-200 bg-white/95 p-4 text-zinc-900 shadow-xl backdrop-blur-sm [-webkit-overflow-scrolling:touch] dark:border-zinc-700 dark:bg-zinc-900/95 dark:text-zinc-50"
         style={{ pointerEvents: open ? "auto" : "none" }}
       >
         <h2 id={titleId} className="text-sm font-semibold tracking-tight">
@@ -546,7 +547,7 @@ ${noteBlock}`;
         }}
         aria-expanded={open}
         aria-controls={dialogId}
-        className="inline-flex items-center gap-2 rounded-full bg-[#185FA5] px-5 py-3 text-sm font-semibold text-[#E6F1FB] shadow-lg ring-2 ring-white/20 transition hover:bg-[#378ADD] focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 dark:ring-zinc-900/60 dark:focus:ring-offset-zinc-900"
+        className="pointer-events-auto relative inline-flex items-center gap-2 rounded-full bg-[#185FA5] px-5 py-3 text-sm font-semibold text-[#E6F1FB] shadow-lg ring-2 ring-white/20 transition hover:bg-[#378ADD] focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 dark:ring-zinc-900/60 dark:focus:ring-offset-zinc-900"
       >
         <svg
           className="h-5 w-5 shrink-0"
